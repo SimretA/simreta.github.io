@@ -129,3 +129,23 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+a {
+  color: rgb(255, 174, 0) !important;
+  font-weight: 500;
+  padding: 2px;
+}
+
+a:hover {
+  background-color: rgba(255, 174, 0, 0.5) !important;
+  /* font-weight: 700; */
+  color: black !important;
+  border-radius: 2em;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  /* border: 3px solid green; */
+  padding: 10px;
+}
