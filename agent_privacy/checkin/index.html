@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>United Airlines Booking</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<nav class="navbar">
+		<div>
+			<!-- <img src="united_logo.png" alt="United Logo" width="50"> -->
+			<span>UNITED</span>
+		</div>
+		<ul class="nav-links">
+			<li><a href="#">Book</a></li>
+			<li><a href="#">My trips</a></li>
+			<li><a href="#">Travel info</a></li>
+			<li><a href="#">MileagePlus</a></li>
+			<li><a href="#">Deals</a></li>
+			<li><a href="#">Help</a></li>
+		</ul>
+		<div class="user-options">
+			<span>English - US $</span>
+			<img src="user-icon.png" alt="User">
+			<img src="cart-icon.png" alt="Cart">
+		</div>
+	</nav>
+
+	<!-- Main Banner -->
+	<!-- <header class="banner">
+		<div class="banner-text">
+			<h2>Enjoy the warmth of these new United destinations.</h2>
+			<a href="#">Find flights →</a>
+		</div>
+	</header> -->
+	<div class="main-container">
+
+		<!-- Flight Booking Form -->
+		<section class="booking-form ">
+			<div>
+				<!-- Navigation Tabs -->
+				<div class="tabs">
+					<button class="active">Book</button>
+					<button>Flight status</button>
+					<button>Check-in</button>
+					<button>My trips</button>
+				</div>
+
+				<!-- Sub Tabs -->
+				<div class="sub-tabs">
+					<span class="active">Flight</span>
+					<span>Packages</span>
+					<span>Hotel</span>
+					<span>Car</span>
+					<span class="link">Cruise ↗</span>
+				</div>
+
+				<!-- Flight Options -->
+				<div class="options">
+					<label><input type="radio" name="trip" checked> Roundtrip</label>
+					<label><input type="radio" name="trip"> One-way</label>
+					<label><input type="checkbox"> Book with miles</label>
+					<label><input type="checkbox"> Flexible dates</label>
+				</div>
+
+				<!-- Booking Form -->
+				<form>
+					<div class="form-row">
+						<div class="form-group">
+							<label>From*</label>
+							<div class="input-wrapper">
+								<input type="text" placeholder="South Bend SBN">
+								<span class="swap-icon">⇆</span>
+							</div>
+						</div>
+						<div class="form-group">
+							<label>To*</label>
+							<input type="text" placeholder="Destination">
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group">
+							<label>Dates*</label>
+							<div class="input-wrapper">
+								<input type="date">
+								<input type="date">
+							</div>
+						</div>
+					</div>
+
+					<div class="form-row">
+						<div class="form-group">
+							<label>Travelers</label>
+							<select>
+								<option>1 Adult</option>
+								<option>2 Adults</option>
+								<option>3 Adults</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label>Cabin</label>
+							<select>
+								<option>Economy</option>
+								<option>Business</option>
+								<option>First Class</option>
+							</select>
+						</div>
+					</div>
+
+					<p class="advanced-search">Advanced search →</p>
+					<p class="link">Changed bag rules and fees for optional services</p>
+
+					<button type="submit" class="find-flights">Find flights</button>
+					<button class="find-credits">Find your travel credits</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- Bonus Miles Offer -->
+		<section class="offer">
+			<p>60,000 BONUS MILES + 500 PQP</p>
+			<a href="#">Learn more →</a>
+		</section>
+
+	</div>
+	<script src="scripts.js"></script>
+
+
+</body>
+
+</html>
