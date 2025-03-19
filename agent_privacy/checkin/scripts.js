@@ -9,3 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const tabButtons = document.querySelectorAll(".tab-btn");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    tabButtons.forEach(button => {
+        button.addEventListener("click", function () {
+            // Remove active class from all buttons
+            tabButtons.forEach(btn => btn.classList.remove("active"));
+            this.classList.add("active");
+
+            // Hide all tab contents
+            tabContents.forEach(content => content.classList.remove("active"));
+
+            // Show the selected tab content
+            const tabID = this.getAttribute("data-tab");
+            document.getElementById(tabID).classList.add("active");
+        });
+    });
+});
