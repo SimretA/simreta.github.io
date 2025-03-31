@@ -6,6 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>United Refunds</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="log.js"></script>
+
+
 </head>
 
 <body>
@@ -92,7 +95,7 @@
 			</div>
 		</div>
 		<div class="modal-footer">
-			<button class="blue-button">Add flight</button>
+			<button class="blue-button" id="submit-btn">Add flight</button>
 			<button class="cancel-button" onclick="closeModal()">Cancel</button>
 		</div>
 	</div>
@@ -107,6 +110,15 @@
 			document.getElementById("addFlightModal").style.display = "none";
 			document.getElementById("modalOverlay").style.display = "none";
 		}
+
+		initLogger("sp.json");
+		document.addEventListener("DOMContentLoaded", function () {
+			const searchBtn = document.querySelector("#submit-btn");
+			searchBtn.addEventListener("click", function (event) {
+				alert("Task complete!");
+				downloadLog();
+			});
+		})
 	</script>
 </body>
 

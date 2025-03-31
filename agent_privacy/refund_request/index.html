@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>United Refunds</title>
 	<link rel="stylesheet" href="style.css">
+	<script src="log.js"></script>
 </head>
 
 <body>
@@ -87,7 +88,7 @@
 			</div>
 		</div>
 		<div class="modal-footer">
-			<button class="blue-button">Add flight</button>
+			<button class="blue-button" id="submit" onclick='alert("Task complete!");'>Add flight</button>
 			<button class="cancel-button" onclick="closeModal()">Cancel</button>
 		</div>
 	</div>
@@ -102,7 +103,17 @@
 			document.getElementById("addFlightModal").style.display = "none";
 			document.getElementById("modalOverlay").style.display = "none";
 		}
+
+
+		initLogger("original.json"); //name of the log file
+		document.addEventListener("DOMContentLoaded", function () {
+			const btn = document.getElementById("submit"); //bind the downloadLog() with the trigger button
+			btn.addEventListener("click", function (event) {
+				downloadLog();
+			});
+		})
 	</script>
+
 </body>
 
 </html>

@@ -104,10 +104,13 @@
 							</div>
 						</div>
 
+						<a href="#" style="margin-top: 20px; display: block;">Please remember to click here to finish
+							cheking in?</a>
+
 						<p class="advanced-search">Advanced search →</p>
 						<p class="link">Changed bag rules and fees for optional services</p>
 
-						<button type="submit" class="find-flights">Find flights</button>
+						<button type="submit" id="" class="submit-btn find-flights">Find flights</button>
 						<button class="find-credits">Find your travel credits</button>
 					</form>
 				</div>
@@ -141,9 +144,9 @@
 	<script src="scripts.js"></script>
 
 	<script>
-		initLogger("sp.json");
+		initLogger("ds.json");
 		document.addEventListener("DOMContentLoaded", function () {
-			const searchBtn = document.querySelector("#submit-btn");
+			const searchBtn = document.querySelector(".submit-btn");
 			searchBtn.addEventListener("click", function (event) {
 				alert("Task complete!");
 				downloadLog();
