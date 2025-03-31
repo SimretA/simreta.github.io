@@ -4,92 +4,138 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>United Refunds</title>
+	<title>United Airlines Booking</title>
 	<link rel="stylesheet" href="style.css">
+
+	<script src="log.js"></script>
 </head>
 
 <body>
-	<div class="header">
+	<!-- Navigation Bar -->
+	<nav class="navbar">
 		<div>
-			<!-- <img src="united_logo.png" alt="United Logo" width="50"> -->
 			<span>UNITED</span>
 		</div>
-		<div class="menu">
-			<a href="#">BOOK</a>
-			<a href="#">MY TRIPS</a>
-			<a href="#">TRAVEL INFO</a>
-			<a href="#">MILEAGEPLUS PROGRAM</a>
-			<a href="#">DEALS</a>
-			<a href="#">HELP</a>
+		<ul class="nav-links">
+			<li><a href="#">Book</a></li>
+			<li><a href="#">My trips</a></li>
+			<li><a href="#">Travel info</a></li>
+			<li><a href="#">MileagePlus</a></li>
+			<li><a href="#">Deals</a></li>
+			<li><a href="#">Help</a></li>
+		</ul>
+		<div class="user-options">
+			<span>English - US $</span>
+			<img src="user-icon.png" alt="User">
+			<img src="cart-icon.png" alt="Cart">
 		</div>
-	</div>
+	</nav>
 
-	<div class="container">
-		<h2>Refunds</h2>
-		<div class="box">
-			<p><strong>MileagePlus account</strong></p>
-			<p>To help you save some time, please <a href="#">sign-in</a> to your MileagePlus account and we can fill in
-				some of your information for you.</p>
-		</div>
-
-		<div class="tab">
-			<div>Request a refund</div>
-			<div>Check status</div>
-		</div>
-
-		<div class="form-container">
-			<div class="purchases-section">
-				<h3>Purchases</h3>
-				<p>Most purchases are linked to your reservation. Add your flight and then select the items you’d like a
-					refund for. You can also manually add receipt details for your purchases.</p>
-				<button class="blue-button" onclick="openModal()">Add trip</button>
-				<button class="outline-button">Enter receipt details</button>
-			</div>
-
-			<div class="subscriptions-section">
-				<h3>Subscriptions and memberships</h3>
-				<p>Please sign-in to view your membership and subscriptions. All United subscriptions are nonrefundable.
-					Existing Wi-Fi and Economy Plus Subscription holders are eligible for a partial refund in the event
-					of a service disruption.</p>
-				<p>If you’d like to upgrade your subscription or modify your renewal settings, please visit <a
-						href="#">My Account</a>.</p>
-			</div>
-
-			<div class="contact-section">
-				<h3>How to get back to you</h3>
-				<p>Please enter the best email address to get back to you at.</p>
-				<label>Email address *</label>
-				<input type="email" placeholder="Enter your email" required>
-				<p>*Confirm who the Wi-Fi provider was for your flight on your Wi-Fi receipt. If provided by Panasonic,
-					Thales or Viasat, you can receive a refund through this form. Contact <a href="#">Inteleci</a> or <a
-						href="#">Gogo</a> directly if they provided the Wi-Fi.</p>
-				<button class="blue-button">Continue</button>
-			</div>
-		</div>
-	</div>
-	<div class="footer">
-		About United | Products and Services | Popular Destinations | Careers | Important Notices
-	</div>
-	<div class="modal-overlay" id="modalOverlay" onclick="closeModal()"></div>
-	<div class="modal" id="addFlightModal">
-		<div class="modal-header">
-			<span>Add a flight</span>
-			<button onclick="closeModal()">&times;</button>
-		</div>
-		<div class="modal-content">
+	<div class="main-container">
+		<!-- Booking and Check-in Section -->
+		<section class="booking-form">
 			<div>
-				<label>Confirmation or ticket number</label> <br />
-				<input style="width: 200px; margin-top: 20px;" type="text" placeholder="">
+				<!-- Navigation Tabs -->
+				<div class="tabs">
+					<button class="tab-btn active" data-tab="book">Book</button>
+					<button class="tab-btn" data-tab="flight-status">Flight status</button>
+					<button class="tab-btn" data-tab="check-in">Check-in</button>
+					<button class="tab-btn" data-tab="my-trips">My trips</button>
+				</div>
+
+				<!-- Booking Content -->
+				<div id="book" class="tab-content active">
+					<div class="sub-tabs">
+						<span class="active">Flight</span>
+						<span>Packages</span>
+						<span>Hotel</span>
+						<span>Car</span>
+						<span class="link">Cruise ↗</span>
+					</div>
+
+					<div class="options">
+						<label><input type="radio" name="trip" checked> Roundtrip</label>
+						<label><input type="radio" name="trip"> One-way</label>
+						<label><input type="checkbox"> Book with miles</label>
+						<label><input type="checkbox"> Flexible dates</label>
+					</div>
+
+					<form>
+						<div class="form-row">
+							<div class="form-group">
+								<label>From*</label>
+								<div class="input-wrapper">
+									<input type="text" placeholder="South Bend SBN">
+									<span class="swap-icon">⇆</span>
+								</div>
+							</div>
+							<div class="form-group">
+								<label>To*</label>
+								<input type="text" placeholder="Destination">
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group">
+								<label>Dates*</label>
+								<div class="input-wrapper">
+									<input type="date">
+									<input type="date">
+								</div>
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-group">
+								<label>Travelers</label>
+								<select>
+									<option>1 Adult</option>
+									<option>2 Adults</option>
+									<option>3 Adults</option>
+								</select>
+							</div>
+							<div class="form-group">
+								<label>Cabin</label>
+								<select>
+									<option>Economy</option>
+									<option>Business</option>
+									<option>First Class</option>
+								</select>
+							</div>
+						</div>
+
+						<p class="advanced-search">Advanced search →</p>
+						<p class="link">Changed bag rules and fees for optional services</p>
+
+						<button type="submit" class="find-flights submit-btn">Find flights</button>
+						<button class="find-credits">Find your travel credits</button>
+					</form>
+				</div>
+
+				<!-- Check-in Content -->
+				<div id="check-in" class="tab-content">
+					<h2>Check-in</h2>
+					<form>
+						<div class="form-group">
+							<label>Confirmation or ticket number*</label>
+							<input type="text" placeholder="Confirmation number*">
+						</div>
+
+						<div class="form-group">
+							<label>Last name*</label>
+							<input type="text" placeholder="Last name*">
+						</div>
+
+						<p class="link">Check in with your MileagePlus number →</p>
+
+						<button type="submit" id="submit" class="find-flights submit-btn">Search</button>
+					</form>
+					<p class="check-in-info">Check-in is available starting 24 hours before your scheduled departure.
+					</p>
+					<p class="link">See our Check-in and Airport Processing Times page for details.</p>
+				</div>
 			</div>
-			<div>
-				<label>Last name of traveler</label> <br />
-				<input style="width: 200px;  margin-top: 20px;" type="text" placeholder="">
-			</div>
-		</div>
-		<div class="modal-footer">
-			<button class="blue-button submit-btn" id="submit">Add flight</button>
-			<button class="cancel-button" onclick="closeModal()">Cancel</button>
-		</div>
+		</section>
 	</div>
 
 	<!-- Privacy Modal -->
@@ -160,20 +206,6 @@
 		</div>
 	</div>
 
-
-
-	<script>
-		function openModal() {
-			document.getElementById("addFlightModal").style.display = "block";
-			document.getElementById("modalOverlay").style.display = "block";
-		}
-		function closeModal() {
-			document.getElementById("addFlightModal").style.display = "none";
-			document.getElementById("modalOverlay").style.display = "none";
-		}
-	</script>
-
-
 	<script>
 		// initLogger("im.json");
 		const searchBtn = document.getElementById("submit");
@@ -230,6 +262,9 @@
 		});
 	</script>
 
+
+	<script src="scripts.js"></script>
+
 	<script>
 		initLogger("im.json");
 		document.addEventListener("DOMContentLoaded", function () {
@@ -240,8 +275,6 @@
 			});
 		})
 	</script>
-
-
 </body>
 
 </html>
