@@ -88,7 +88,8 @@
 			</div>
 		</div>
 		<div class="modal-footer">
-			<button class="blue-button" id="submit" onclick='alert("Task complete!");'>Add flight</button>
+			<button class="blue-button" class="submit-btn" id="submit" onclick='alert("Task complete!");'>Add
+				flight</button>
 			<button class="cancel-button" onclick="closeModal()">Cancel</button>
 		</div>
 	</div>
@@ -110,7 +111,7 @@
 
 	initLogger("original.json"); //name of the log file
 	document.addEventListener("DOMContentLoaded", function () {
-		const btn = document.getElementById("submit"); //bind the downloadLog() with the trigger button
+		const btn = document.querySelector(".submit-btn"); //bind the downloadLog() with the trigger button
 		btn.addEventListener("click", function (event) {
 			downloadLog();
 		});

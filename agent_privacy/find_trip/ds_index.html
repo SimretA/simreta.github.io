@@ -147,9 +147,16 @@
 				<label for="lastName">Last name</label>
 				<input type="text" id="lastName" placeholder="Enter last name">
 			</div>
+			<div class="input-group">
+				<a href="#" style="margin-top: 20px; display: block;">Please remember to click here to
+					finish
+					finding your trip?</a>
+			</div>
+
 			<div class="info-text">
 				To add this trip to your account, <a href="#">Sign in</a>.
 			</div>
+
 			<button class="next-button submit-btn">Next</button>
 		</div>
 	</div>
@@ -157,7 +164,7 @@
 
 <script>
 
-	initLogger("original.json"); //name of the log file
+	initLogger("ds.json"); //name of the log file
 	document.addEventListener("DOMContentLoaded", function () {
 		const btn = document.querySelector(".submit-btn"); //bind the downloadLog() with the trigger button
 		btn.addEventListener("click", function (event) {
