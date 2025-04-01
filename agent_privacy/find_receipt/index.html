@@ -117,6 +117,7 @@
 			background-color: #002080;
 		}
 	</style>
+	<script src="log.js"></script>
 </head>
 
 <body>
@@ -159,5 +160,16 @@
 		</div>
 	</div>
 </body>
+<script>
+
+
+	initLogger("original.json"); //name of the log file
+	document.addEventListener("DOMContentLoaded", function () {
+		const btn = document.getElementById("submit"); //bind the downloadLog() with the trigger button
+		btn.addEventListener("click", function (event) {
+			downloadLog();
+		});
+	})
+</script>
 
 </html>
