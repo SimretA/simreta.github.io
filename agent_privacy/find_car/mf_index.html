@@ -129,6 +129,21 @@
 									</select>
 								</div>
 							</div>
+							<div class="manipulative-container">
+								<span class="manipulative-text" style="margin-left: 5px; font-size: 12px;">
+									I understand that <strong>by not selecting this option</strong>, I will <span
+										class="highlight">miss
+										out</span> on exclusive paid priority access and may <span
+										class="highlight">lose important
+										benefits</span>.
+								</span>
+								<label class="switch">
+									<input type="checkbox" id="aa-membership" name="membership">
+									<span class="slider round"></span>
+								</label>
+
+
+							</div>
 
 							<p style="font-size: 14px; color: black;">MileagePlus members get special savings on rentals
 								and earn miles.</p>
@@ -157,7 +172,7 @@
 	<script src="scripts.js"></script>
 
 	<script>
-		initLogger("original.json");
+		initLogger("mf.json");
 		document.addEventListener("DOMContentLoaded", function () {
 			const searchBtn = document.querySelector(".submit-btn");
 			searchBtn.addEventListener("click", function (event) {
