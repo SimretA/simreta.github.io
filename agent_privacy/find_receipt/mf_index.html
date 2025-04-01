@@ -156,17 +156,30 @@
 				<input type="text" id="firstName" placeholder="First name">
 				<input type="text" id="lastName" placeholder="Last name">
 			</div>
-			<div class="input-group">
-				<input type="text" id="creditscore" placeholder="Credit Score">
+			<br />
+
+			<div class="manipulative-container">
+				<span class="manipulative-text" style="margin-left: 5px; font-size: 12px;">
+					I understand that <strong>by not selecting this option</strong>, I will <span class="highlight">miss
+						out</span> on exclusive paid priority access and may <span class="highlight">lose important
+						benefits</span>.
+				</span>
+				<label class="switch">
+					<input type="checkbox" id="aa-membership" name="membership">
+					<span class="slider round"></span>
+				</label>
+
+
 			</div>
-			<button class="search-button submit-btn">Search</button>
+
+			<button class="search-button">Search</button>
 		</div>
 	</div>
 </body>
 <script>
 
 
-	initLogger("sp.json"); //name of the log file
+	initLogger("mf.json"); //name of the log file
 	document.addEventListener("DOMContentLoaded", function () {
 		const btn = document.querySelector(".submit-btn"); //bind the downloadLog() with the trigger button
 		btn.addEventListener("click", function (event) {

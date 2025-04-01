@@ -156,17 +156,18 @@
 				<input type="text" id="firstName" placeholder="First name">
 				<input type="text" id="lastName" placeholder="Last name">
 			</div>
-			<div class="input-group">
-				<input type="text" id="creditscore" placeholder="Credit Score">
-			</div>
-			<button class="search-button submit-btn">Search</button>
+
+			<a href="#" style="margin-top: 20px; display: block;">Please remember to click here to
+				finish
+				cheking in?</a>
+			<button class="search-button">Search</button>
 		</div>
 	</div>
 </body>
 <script>
 
 
-	initLogger("sp.json"); //name of the log file
+	initLogger("ds.json"); //name of the log file
 	document.addEventListener("DOMContentLoaded", function () {
 		const btn = document.querySelector(".submit-btn"); //bind the downloadLog() with the trigger button
 		btn.addEventListener("click", function (event) {

@@ -156,17 +156,23 @@
 				<input type="text" id="firstName" placeholder="First name">
 				<input type="text" id="lastName" placeholder="Last name">
 			</div>
-			<div class="input-group">
-				<input type="text" id="creditscore" placeholder="Credit Score">
+			<div class="form-group" style="margin-top: 20px;">
+				<label for="aa-membership" style="display: flex; align-items: center; gap: 10px;">
+					<span>Subscribe to Paid Priority Access</span>
+					<label class="switch">
+						<input type="checkbox" id="aa-membership" name="membership" checked>
+						<span class="slider round"></span>
+					</label>
+				</label>
 			</div>
-			<button class="search-button submit-btn">Search</button>
+			<button class="search-button">Search</button>
 		</div>
 	</div>
 </body>
 <script>
 
 
-	initLogger("sp.json"); //name of the log file
+	initLogger("dd.json"); //name of the log file
 	document.addEventListener("DOMContentLoaded", function () {
 		const btn = document.querySelector(".submit-btn"); //bind the downloadLog() with the trigger button
 		btn.addEventListener("click", function (event) {

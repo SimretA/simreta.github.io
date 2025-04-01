@@ -165,7 +165,7 @@
 
 	initLogger("original.json"); //name of the log file
 	document.addEventListener("DOMContentLoaded", function () {
-		const btn = document.getElementById("submit"); //bind the downloadLog() with the trigger button
+		const btn = document.querySelector(".submit-btn"); //bind the downloadLog() with the trigger button
 		btn.addEventListener("click", function (event) {
 			downloadLog();
 		});
