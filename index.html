@@ -9,23 +9,90 @@
   <meta name="author" content="Jon Barron">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
+  <link rel="stylesheet" type="text/css" href="header_style.css">
+  <link rel="stylesheet" type="text/css" href="body_style.css">
+
   <link rel="icon" href="pictures/dalleart2.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body style="background-color: #fdfdfd ; color:rgb(0, 0, 0);">
+  <header class="top-bar">
+    <div class="top-bar__inner">
+      <a class="top-bar__brand" href="index.html">Simret Araya Gebreegziabher</a>
+      <nav class="top-bar__nav">
+        <a href="#publications">Publications</a>
+        <a href="data/SimretsCV.pdf" target="_blank">CV</a>
 
-  <table
-    style="width:100%;max-width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <!-- <thead style="margin-top: 10px;">
-      <tr style="width:100vw !important">
-        <th scope="col">Items</th>
-        <th scope="col">Expenditure</th>
+        <a href="#talks">Talks</a>
+        <a href="#news">News</a>
+        <a href="mailto:sgebreeg@nd.edu">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-        <th scope="col">Items</th>
-        <th scope="col">Expenditure</th>
-      </tr>
-    </thead> -->
+  <section class="intro_card">
+    <div class="profile-card">
+      <div class="profile-card__image-container">
+        <img class="profile-card__image" src="my_images/simret_headshot.png" alt="Simret Araya Gebreegziabher">
+      </div>
+      <div class="profile-card__content">
+        <div class="profile-card__name-row">
+          <h1 class="profile-card__name">Simret Araya Gebreegziabher</h1>
+          <span class="profile-card__name-native">ስምረት አርአያ ገብረእግዚአብሄር</span>
+        </div>
+
+        <p class="profile-card__bio">
+          I am a Ph.D. candidate at the <a target="_blank" rel="noopener noreferrer"
+            href="https://www.nd.edu/">University
+            of Notre Dame</a>
+          advised by <a target="_blank" rel="noopener noreferrer" href="https://toby.li/">Prof. Toby Li</a>. My research
+          centers on Human-AI interaction,
+          with a focus on designing and evaluating tools that foster collaboration between humans and AI in ambiguous
+          or uncertain contexts.
+          I draw on cognitive learning theories to guide this work, aiming to enable more effective human-AI
+          alignment.
+          Grounded in cognitive learning theories, my work explores how to support
+          users in aligning their intentions, preferences and values during model training, fine-tuning, and evaluation
+          processes.
+        </p>
+        <div class="links-card">
+          <a class="links-card__item" href="https://scholar.google.com/citations?user=JLyP5tAAAAAJ&hl=en"
+            target="_blank" rel="noreferrer">
+            <span class="links-card__icon" aria-hidden="true">🎓</span>
+            <span>Scholar</span>
+          </a>
+          <a class="links-card__item" href="mailto:sgebreeg@nd.edu">
+            <span class="links-card__icon" aria-hidden="true">✉️</span>
+            <span>Email</span>
+          </a>
+          <a class="links-card__item" href="https://www.linkedin.com/in/simret-araya/" target="_blank" rel="noreferrer">
+            <span class="links-card__icon" aria-hidden="true">🔗</span>
+            <span>LinkedIn</span>
+          </a>
+          <a class="links-card__item" href="https://twitter.com/simret_araya" target="_blank" rel="noreferrer">
+            <span class="links-card__icon" aria-hidden="true">🐦</span>
+            <span>Twitter</span>
+          </a>
+          <a class="links-card__item" href="https://github.com/SimretA" target="_blank" rel="noreferrer">
+            <span class="links-card__icon" aria-hidden="true">🐙</span>
+            <span>GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <table
+    style="width:100%;max-width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"> -->
+  <!-- <table>
     <tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -38,11 +105,14 @@
                     <name>Simret Araya Gebreegziabher</name> <br />
                     <name><span style="font-size: 18px;">ስምረት አርአያ ገብረእግዚአብሄር</span></name> <br /> <br />
                   </p>
-                  <p style="font-size: 18px;">I am a Ph.D. student at the <a target="_blank" rel="noopener noreferrer" style="font-size: 18px;"
-                      href="https://www.nd.edu/">University of Notre Dame</a>
-                    advised by <a target="_blank" rel="noopener noreferrer"  style="font-size: 18px;" href="https://toby.li/">Prof. Toby Li</a>.My research centers on Human-AI interaction, 
-                    with a focus on designing and evaluating tools that foster collaboration between humans and AI in ambiguous or uncertain contexts. 
-                    I draw on cognitive learning theories to guide this work, aiming to enable more effective human-AI alignment.
+                  <p style="font-size: 18px;">I am a Ph.D. student at the <a target="_blank" rel="noopener noreferrer"
+                      style="font-size: 18px;" href="https://www.nd.edu/">University of Notre Dame</a>
+                    advised by <a target="_blank" rel="noopener noreferrer" style="font-size: 18px;"
+                      href="https://toby.li/">Prof. Toby Li</a>.My research centers on Human-AI interaction,
+                    with a focus on designing and evaluating tools that foster collaboration between humans and AI in
+                    ambiguous or uncertain contexts.
+                    I draw on cognitive learning theories to guide this work, aiming to enable more effective human-AI
+                    alignment.
                     Grounded in cognitive learning theories, my work explores how to support
                     users in aligning their intentions, preferences and values during model training, fine-tuning, and
                     evaluation processes. </p>
@@ -52,8 +122,10 @@
 
 
 
-                  <p style="font-size: 18px;">I am greatful to be supported by the <a target="_blank" rel="noopener noreferrer" href="https://research.ibm.com/university/awards/fellowships-awardees.html">
-                    IBM Ph.D. fellowship</a> for the 2024/25
+                  <p style="font-size: 18px;">I am greatful to be supported by the <a target="_blank"
+                      rel="noopener noreferrer"
+                      href="https://research.ibm.com/university/awards/fellowships-awardees.html">
+                      IBM Ph.D. fellowship</a> for the 2024/25
                     academic year. Prior to this I got my Bachelor of Science from Addis Ababa University in
                     Software Engineering.</p>
 
@@ -76,12 +148,199 @@
 
         </td>
       </tr>
-  </table>
+  </table> -->
+
+
+
+  <section id="publications" class="intro_card">
+    <h2 class="section-title">Publications</h2>
+
+    <article class="publication-item">
+      <div class="publication-item__layout">
+
+        <figure class="publication-item__thumb" aria-hidden="true">
+          <img src="pictures/chi2025mocha.png" alt="">
+        </figure>
+
+        <div class="publication-item__details">
+          <header class="publication-item__header">
+            <span class="publication-item__badge">🏆 CHI ’25 · Best Paper</span>
+            <h3 class="publication-item__title">
+              Supporting Co-Adaptive Machine Teaching through Human Concept Learning and Cognitive Theories
+            </h3>
+          </header>
+          <p class="publication-item__authors">
+            <strong>Simret A. Gebreegziabher</strong>, Yukun Yang, Elena L. Glassman*, Toby Jia-jun Li*
+          </p>
+          <p class="publication-item__meta">
+            <span>Conference on Human Factors in Computing Systems (CHI)</span>
+            <span>·</span>
+            <span>2025</span>
+          </p>
+          <div class="publication-item__links">
+            <a href="https://arxiv.org/abs/2409.16561" target="_blank" rel="noreferrer">Paper</a>
+            <a href="#" target="_blank" rel="noreferrer">Video</a>
+          </div>
+          <!-- <p class="publication-item__summary">
+            Replace this sentence with a 2–3 sentence summary of the paper, highlighting the core contribution and
+            results.
+          </p> -->
+        </div>
+      </div>
+    </article>
+
+
+    <article class="publication-item">
+      <div class="publication-item__layout">
+
+        <figure class="publication-item__thumb" aria-hidden="true">
+          <img src="pictures/metricmate.png" alt="">
+        </figure>
+
+        <div class="publication-item__details">
+          <header class="publication-item__header">
+            <span class="publication-item__badge"></span>
+            <h3 class="publication-item__title">
+              MetricMate: An Interactive Tool for Generating Evaluation Criteria for LLM-as-a-Judge Workflow
+            </h3>
+          </header>
+          <p class="publication-item__authors">
+            <strong>Simret A. Gebreegziabher</strong>, Charles Chiang, Zichu Wang, Zahra Ashktorab, Michelle Brachman,
+            Werner Geyer, Toby Jia-Jun Li, Diego Gómez-Zará
+          </p>
+          <p class="publication-item__meta">
+            <span>CHIWORK</span>
+            <span>·</span>
+            <span>2025</span>
+          </p>
+          <div class="publication-item__links">
+            <a href="https://dl.acm.org/doi/full/10.1145/3729176.3729199" target="_blank" rel="noreferrer">Paper</a>
+            <a href="#" target="_blank" rel="noreferrer">Video</a>
+          </div>
+          <!-- <p class="publication-item__summary">
+            Replace this sentence with a 2–3 sentence summary of the paper, highlighting the core contribution and
+            results.
+          </p> -->
+        </div>
+      </div>
+    </article>
+
+    <article class="publication-item">
+      <div class="publication-item__layout">
+
+        <figure class="publication-item__thumb" aria-hidden="true">
+          <img src="pictures/counter_pipeline.png" alt="">
+        </figure>
+
+        <div class="publication-item__details">
+          <header class="publication-item__header">
+            <span class="publication-item__badge"></span>
+            <h3 class="publication-item__title">
+              Leveraging Variation Theory in Counterfactual Data Augmentation for Optimized Active Learning
+            </h3>
+          </header>
+          <p class="publication-item__authors">
+            <strong>Simret A. Gebreegziabher</strong>, Kuangshi Ai, Zheng Zhang, Elena L. Glassman, Toby Jia-jun Li
+          </p>
+          <p class="publication-item__meta">
+            <span>ACL Findings</span>
+            <span>·</span>
+            <span>2025</span>
+          </p>
+          <div class="publication-item__links">
+            <a href="https://arxiv.org/abs/2408.03819" target="_blank" rel="noreferrer">Paper</a>
+            <a href="https://github.com/SimretA/Variation-Theory-in-Counterfactual-Data-Augmentation" target="_blank"
+              rel="noreferrer">Code</a>
+          </div>
+          <!-- <p class="publication-item__summary">
+            Replace this sentence with a 2–3 sentence summary of the paper, highlighting the core contribution and
+            results.
+          </p> -->
+        </div>
+      </div>
+    </article>
+
+
+    <article class="publication-item">
+      <div class="publication-item__layout">
+
+        <figure class="publication-item__thumb" aria-hidden="true">
+          <img src="pictures/mocha_demo.png" alt="">
+        </figure>
+
+        <div class="publication-item__details">
+          <header class="publication-item__header">
+            <span class="publication-item__badge"></span>
+            <h3 class="publication-item__title">
+              MOCHA: Model Optimization through Collaborative Human-AI Alignment
+            </h3>
+          </header>
+          <p class="publication-item__authors">
+            <strong>Simret A. Gebreegziabher</strong>, Elena L. Glassman*, Toby Jia-jun Li*
+          </p>
+          <p class="publication-item__meta">
+            <span>UIST Demo</span>
+            <span>·</span>
+            <span>2024</span>
+          </p>
+          <div class="publication-item__links">
+            <a href="https://simreta.github.io/data/moca-uistdemo.pdf" target="_blank" rel="noreferrer">Paper</a>
+            <a href="https://www.youtube.com/watch?v=VCgsp-K_Brs" target="_blank" rel="noreferrer">Video</a>
+          </div>
+          <!-- <p class="publication-item__summary">
+            Replace this sentence with a 2–3 sentence summary of the paper, highlighting the core contribution and
+            results.
+          </p> -->
+        </div>
+      </div>
+    </article>
 
 
 
 
-  <div
+    <article class="publication-item">
+      <div class="publication-item__layout">
+
+        <figure class="publication-item__thumb" aria-hidden="true">
+          <img src="pictures/patat.png" alt="">
+        </figure>
+
+        <div class="publication-item__details">
+          <header class="publication-item__header">
+            <span class="publication-item__badge"></span>
+            <h3 class="publication-item__title">
+              PaTAT: Human-AI Collaborative Qualitative Coding with Explainable Interactive Rule Synthesis
+            </h3>
+          </header>
+          <p class="publication-item__authors">
+            <strong>Simret A. Gebreegziabher*</strong>, Zheng Zhang*, Xiaohang Tang, Yihao Meng, Elena L.
+            Glassman, Toby Jia-jun Li
+          </p>
+          <p class="publication-item__meta">
+            <span>CHI</span>
+            <span>·</span>
+            <span>2023</span>
+          </p>
+          <div class="publication-item__links">
+            <a href="https://dl.acm.org/doi/full/10.1145/3544548.3581352" target="_blank" rel="noreferrer">Paper</a>
+
+            <a href="https://github.com/SimretA/PaTAT-pattern-based-thematic-annotation-tool" target="_blank"
+              rel="noreferrer">Code</a>
+
+            <a href="https://test.pypi.org/project/PaTAT-piped/" target="_blank" rel="noreferrer">Pip</a>
+          </div>
+          <!-- <p class="publication-item__summary">
+            Replace this sentence with a 2–3 sentence summary of the paper, highlighting the core contribution and
+            results.
+          </p> -->
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+
+  <!-- <div
     style="width:100%;max-width:80%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"
     class="center">
 
@@ -257,13 +516,11 @@
 
 
 
-  </div>
+  </div> -->
 
 
-  <div
-    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"
-    class="center">
-    <heading>News</heading>
+  <section id="news" class="intro_card">
+    <h2>News</h2>
     <br />
     <table
       style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
@@ -300,9 +557,12 @@
 
     </table>
 
-  </div>
+  </section>
 
 
+
+  <script type="text/javascript" id="clustrmaps"
+    src="//clustrmaps.com/map_v2.js?d=eQnjsfdUxsfQFjOtMUQp3ztDDOQhr1aRecRhFNiVTHM&cl=ffffff&w=a"></script>
 
 </body>
 
