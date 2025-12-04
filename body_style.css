@@ -163,3 +163,7 @@
 		margin: 0 auto;
 	}
 }
+
+.clustrmaps-embed {
+	display: none;
+}
