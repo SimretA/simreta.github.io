@@ -126,7 +126,7 @@ nav a[aria-current="page"] {
 }
 
 .hero {
-  padding-top: clamp(4.5rem, 9vw, 7.5rem);
+  padding-top: clamp(2.5rem, 5vw, 4rem);
   padding-bottom: 0.75rem;
 }
 
@@ -135,7 +135,7 @@ nav a[aria-current="page"] {
   top: 96px;
   min-width: 0;
   max-height: calc(100vh - 120px);
-  margin-top: clamp(4.5rem, 9vw, 7.5rem);
+  margin-top: clamp(2.5rem, 5vw, 4rem);
   overflow-y: auto;
   scrollbar-width: thin;
 }
@@ -374,7 +374,7 @@ h1 {
 
 .work-section,
 .news-section {
-  padding-block: clamp(4.5rem, 8vw, 7rem);
+  padding-block: clamp(2.5rem, 5vw, 4rem);
   scroll-margin-top: 68px;
 }
 
@@ -422,6 +422,10 @@ h1 {
   border-radius: 3px;
   background: var(--surface);
   object-fit: cover;
+}
+
+.publication > img.publication-image--contain {
+  object-fit: contain;
 }
 
 .pub-meta {
